@@ -10,13 +10,15 @@ const User = require("./src/models/user.model.js");
 
 const app = express();
 app.use(express.json());
+// {
+//   origin: ["http://localhost:3000"],
+//   origin:"*",
+//   origin: ["http://localhost:3000", "https://netflix-gp-twith-mern-6kpk-1esxvjvg7.vercel.app"],
+//   credentials: true,
+// }
 
 app.use(
-  cors({
-    // origin: ["http://localhost:3000"],
-    origin: ["http://localhost:3000", "https://netflix-gp-twith-mern-6kpk-1esxvjvg7.vercel.app"],
-    credentials: true,
-  })
+  cors()
 );
 
 mongoose
