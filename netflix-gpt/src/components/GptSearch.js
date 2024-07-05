@@ -34,6 +34,7 @@ const GptSearch = () => {
       model: "gpt-3.5-turbo",
     });
     const moviesArray = chatCompletion.choices[0].message.content.split(",");
+   
 
     const promiseArray = moviesArray.map((movies) =>
       fetchMoviesFromTMDB(movies)
