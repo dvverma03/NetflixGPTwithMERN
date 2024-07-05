@@ -28,7 +28,7 @@ const Header = () => {
     } else {
       const fetchDetails = async () => {
         try {
-          const res = await axios.post("http://localhost:1234/userInfo", {
+          const res = await axios.post("https://netflix-gp-twith-mern.vercel.app/userInfo", {
             userId: storedUserData,
           });
           const user = {

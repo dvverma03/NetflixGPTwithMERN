@@ -34,7 +34,7 @@ const Login = () => {
         return;
       }
       try {
-        const res = await axios.post("http://localhost:1234/register", {
+        const res = await axios.post("https://netflix-gp-twith-mern.vercel.app/register", {
           email: email.current.value,
           password: password.current.value,
           fullName: name.current.value,
@@ -57,7 +57,7 @@ const Login = () => {
     } else {
       // sign in
       try {
-        const res = await axios.post("http://localhost:1234/login", {
+        const res = await axios.post("https://netflix-gp-twith-mern.vercel.app/login", {
           email: email.current.value,
           password: password.current.value,
         });

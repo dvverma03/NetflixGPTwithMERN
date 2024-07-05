@@ -13,8 +13,8 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: ["http://localhost:3000"],
-    // origin: ["http://localhost:3000", "https://assignment-lavitation-frontend.vercel.app"],
+    // origin: ["http://localhost:3000"],
+    origin: ["http://localhost:3000", "https://netflix-gp-twith-mern-6kpk-1esxvjvg7.vercel.app"],
     credentials: true,
   })
 );
