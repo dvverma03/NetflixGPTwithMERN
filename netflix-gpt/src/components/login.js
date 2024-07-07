@@ -13,8 +13,6 @@ const Login = () => {
   const name = useRef();
   const dispatch= useDispatch()
   const [errMessage, setErrMessage] = useState(null);
-
-  window.alert("If you are getting dangerous site error please use different browser or you can open with details button and only visit")
   
   useEffect(()=>{
     const storedUserData = localStorage.getItem('NetflixGPT token');
